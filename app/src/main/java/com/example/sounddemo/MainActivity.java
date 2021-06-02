@@ -98,23 +98,23 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void stop(View view) {
-        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-        }
-    }
+//    public void stop(View view) {
+//        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+//            mediaPlayer.stop();
+//            mediaPlayer.release();
+//        }
+//    }
 
-    @Override
-    public void onDestroy() {
-        Toast.makeText(this, "My Service Stopped", Toast.LENGTH_LONG).show();
-        super.onDestroy();
-        if (mediaPlayer != null) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-
-        }
-        mediaPlayer = null;
-
-    }
+//    @Override
+//    public void onDestroy() {
+//        Toast.makeText(this, "My Service Stopped", Toast.LENGTH_LONG).show();
+//        super.onDestroy();
+//        if (mediaPlayer != null) {
+//            mediaPlayer.stop();
+//            mediaPlayer.release();
+//
+//        }
+//        mediaPlayer = null;
+//
+//    }
 }
